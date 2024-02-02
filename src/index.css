@@ -7,6 +7,37 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: rgb(241, 241, 241);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  /* list-style-type: none; */
+}
+
+img {
+	display: block;
+    max-width: 100%;
+}
+
+button {
+    color: currentColor;
 }
 
 code {
