@@ -1,14 +1,15 @@
 import Profile from './Profile';
 import Statistics from './Statistics';
+import FriendList from './FriendList';
 
 import user from '../data/user.json';
 import data from '../data/data.json';
+import friends from '../data/friends.json';
 
 export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -30,6 +31,10 @@ export const App = () => {
         key={data.id}
         title="Upload stats"
         stats={data}
+      />
+      <FriendList
+        key={friends.id}
+        friends={friends}
       />
     </div>
   );

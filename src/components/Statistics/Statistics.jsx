@@ -1,8 +1,6 @@
-import css from './Statistics.module.css';
+import getRandomHexColor from '../../handlers/getRandomHexColor';
 
-function getRandomHexColor() {
-    return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, 0)}`;
-};
+import css from './Statistics.module.css';
 
 const Statistics = ({ title, stats }) => {
     return (
@@ -15,7 +13,6 @@ const Statistics = ({ title, stats }) => {
                     label,
                     percentage,
                 }) => {
-                    console.log(getRandomHexColor());
                     return (
                         <li
                             key={ id }
