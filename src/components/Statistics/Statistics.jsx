@@ -11,13 +11,19 @@ const Statistics = ({ title, stats }) => {
 
             <ul className={css["stat-list"]}>
                 {stats.map(({
+                    id,
                     label,
                     percentage,
                 }) => {
+                    console.log(getRandomHexColor());
                     return (
-                        <li className={css.item} style={{backgroundColor: getRandomHexColor()}}>
-                            <span className={css.label}>{label}</span>
-                            <span className={css.percentage}>{percentage}%</span>
+                        <li
+                            key={ id }
+                            className={css.item}
+                            style={{ backgroundColor: getRandomHexColor() }}
+                        >
+                            <span className={css.label}>{ label }</span>
+                            <span className={css.percentage}>{ percentage }%</span>
                         </li>
                     );
                 })}

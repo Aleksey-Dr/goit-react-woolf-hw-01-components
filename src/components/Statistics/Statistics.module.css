@@ -19,8 +19,6 @@
 .stat-list {
     display: flex;
     list-style: none;
-
-    font-size: 32px;
 }
 
 .item {
@@ -43,4 +41,10 @@
 
 .label {
     margin-bottom: 16px;
+
+    font-size: 32px;
+}
+
+.percentage {
+    font-size: 44px;
 }
