@@ -1,7 +1,6 @@
 import Profile from './Profile';
 import Statistics from './Statistics';
 import FriendList from './FriendList';
-import FriendListItem from './FriendListItem';
 import TransactionHistory from './TransactionHistory';
 
 import user from '../data/user.json';
@@ -35,12 +34,7 @@ export const App = () => {
         title="Upload stats"
         stats={data}
       />
-      <FriendList>
-        <FriendListItem
-          key={friends.id}
-          friends={friends}
-        />
-      </FriendList>
+      <FriendList friends={friends} />
       <TransactionHistory
         key={transactions.id}
         items={transactions}
